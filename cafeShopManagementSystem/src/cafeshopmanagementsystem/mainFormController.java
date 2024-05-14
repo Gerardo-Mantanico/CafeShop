@@ -746,6 +746,7 @@ public class mainFormController implements Initializable {
                 AnchorPane pane = load.load();
                 cardProductController cardC = load.getController();
                 cardC.setData(cardListData.get(q));
+                cardC.setMainFrom(this);
                 
                 if (column == 3) {
                     column = 0;
@@ -983,13 +984,10 @@ public class mainFormController implements Initializable {
             map.put("getReceipt", (cID - 1));
             
             try {
-                
-                JasperDesign jDesign = JRXmlLoader.load("C:\\Users\\WINDOWS 10\\Documents\\NetBeansProjects\\cafeShopManagementSystem\\src\\cafeshopmanagementsystem\\report.jrxml");
+                JasperDesign jDesign = JRXmlLoader.load("C://Users/HP/Desktop/Class/web-store/CafeShopManagementSystem/cafeShopManagementSystem/src/cafeshopmanagementsystem/report.jrxml");
                 JasperReport jReport = JasperCompileManager.compileReport(jDesign);
                 JasperPrint jPrint = JasperFillManager.fillReport(jReport, map, connect);
-                
                 JasperViewer.viewReport(jPrint, false);
-                
                 menuRestart();
                 
             } catch (Exception e) {
@@ -1115,7 +1113,8 @@ public class mainFormController implements Initializable {
             inventory_form.setVisible(false);
             menu_form.setVisible(true);
             customers_form.setVisible(false);
-            
+
+            //copiar
             menuDisplayCard();
             menuDisplayTotal();
             menuShowOrderData();

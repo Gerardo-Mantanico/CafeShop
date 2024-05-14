@@ -16,24 +16,21 @@ import javafx.stage.Stage;
  * @author WINDOWS 10
  */
 public class CafeShopManagementSystem extends Application {
-    
-    @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-        stage.setTitle("Cafe Shop Management System");
-        
-        stage.setScene(scene);
-        stage.show();
-    }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
-    }
-    
+ @Override
+ public void start(Stage stage) throws Exception {
+  Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+  Scene scene = new Scene(root);
+  stage.setTitle("V-WAD SYSTEM CONTROL");
+  stage.setScene(scene);
+  stage.show();
+ }
+
+ /**
+  * @param args the command line arguments
+  */
+ public static void main(String[] args) {
+  launch(args);
+ }
+
 }

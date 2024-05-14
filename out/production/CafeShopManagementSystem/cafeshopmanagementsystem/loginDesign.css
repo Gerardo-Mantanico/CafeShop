@@ -10,7 +10,7 @@ and open the template in the editor.
 
 .gradient{
     /*-fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);*/
-    -fx-background-color: linear-gradient(to bottom right, #154d62, #c8792b);
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #122240);
 }
 
 .white-form{
@@ -24,14 +24,14 @@ and open the template in the editor.
 }
 
 .login-btn{
-    -fx-background-color: linear-gradient(to bottom right, #ceb546,#dcdc95);
+    -fx-background-color: linear-gradient(to bottom right, #098c53, #246861); 
     -fx-background-radius: 5px;
     -fx-cursor: hand;
     -fx-text-fill: #fff;
     -fx-font-size: 14px;
 }
 .login-btn:hover{
-    -fx-background-color: linear-gradient(to bottom right, #efd269, #c8914c);
+    -fx-background-color: linear-gradient(to bottom right, #0fb565, #399a8f); 
 }
 
 .textfield{

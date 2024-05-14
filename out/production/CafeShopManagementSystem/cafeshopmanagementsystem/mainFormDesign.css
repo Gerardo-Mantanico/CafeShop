@@ -9,13 +9,13 @@ and open the template in the editor.
 */
 
 .header{
-    -fx-background-color: linear-gradient(to bottom right, #c8792b, #154d62);
+    -fx-background-color: linear-gradient(to bottom right, #098c53, #246861);
     -fx-border-color: #fff;
     -fx-border-width: 0 0 .8px 0;
 }
 
 .nav-form{
-    -fx-background-color: linear-gradient(to bottom right, #c8792b, #154d62);
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
 }
 
 .nav-btn{
@@ -78,11 +78,11 @@ and open the template in the editor.
 }
 
 .btn{
-    -fx-background-color: linear-gradient(to bottom right, #0f6789, #246861);
+    -fx-background-color: linear-gradient(to bottom right, #098c53, #246861); 
     -fx-cursor: hand;
     -fx-text-fill: #fff;
     -fx-font-size: 14px;
 }
 .btn:hover{
-    -fx-background-color: linear-gradient(to bottom right, #0fb565, #399a8f);
+    -fx-background-color: linear-gradient(to bottom right, #0fb565, #399a8f); 
 }

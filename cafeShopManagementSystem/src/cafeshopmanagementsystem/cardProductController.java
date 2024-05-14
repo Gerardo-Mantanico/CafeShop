@@ -49,7 +49,7 @@ public class cardProductController implements Initializable {
 
     private productData prodData;
     private Image image;
-
+    private mainFormController mainFrom;
     private String prodID;
     private String type;
     private String prod_date;
@@ -62,6 +62,10 @@ public class cardProductController implements Initializable {
     private ResultSet result;
 
     private Alert alert;
+
+    public void setMainFrom(mainFormController mainFrom) {
+        this.mainFrom = mainFrom;
+    }
 
     public void setData(productData prodData) {
         this.prodData = prodData;
@@ -88,6 +92,7 @@ public class cardProductController implements Initializable {
     private double totalP;
     private double pr;
 
+    //agregar actualizacion
     public void addBtn() {
 
         mainFormController mForm = new mainFormController();
@@ -203,6 +208,9 @@ public class cardProductController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        mainFrom.menuDisplayCard();
+        mainFrom.menuDisplayTotal();
+        mainFrom.menuShowOrderData();
 
     }
 
